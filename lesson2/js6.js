@@ -12,7 +12,7 @@ function getDeclension(numeral, variation) {
     let count = numeral % 100;
 
     if (count >= 5 && count <= 20) {
-        declension = variation['2'];
+        declension = variation[2];
     } else {
         count = count % 10;         // признаюсь честно, этот вложенный остаток от деления подсмотрела в интернете :-p
         if (count === 1) {
