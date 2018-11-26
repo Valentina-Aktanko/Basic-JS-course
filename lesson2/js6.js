@@ -1,29 +1,39 @@
 'use strict';
-//возвращает подстроку с позиции start до, но не включая end
 
 /**
- * Возвращает последний символ в строке
- * @param {string} stringCount - переданная строка
- * @returns {string} - последний символ в строке
+ * Возвращаяет вариант склонения для введенного числа
+ * @param {number} numeral - число, для которого необходимо выбрать склонение
+ * @param {array} variation - массив, содержащий варианты слов в склонениях:
+ * @returns {string} declension - выбранный вариант слова с нужным склонением по порядку: 1, 2 и 3 склонения
  */
-function getLastChar(stringCount) {
-    return stringCount.substr(stringCount.length-1,1);
-}
-function getDeclensionByCount(count) {
+function getDeclension(numeral, variation) {
 
-    switch (getLastChar(count.toString())) {
-        case 'add':
-            return add(arg1, arg2);
-        case 'reduce':
-            return reduce(arg1, arg2);
-        case 'divide':
-            return divide(arg1, arg2);
-        case 'multiply':
-            return multiply(arg1, arg2);
-        default:
-            return NaN;
+    let declension = '';
+    let count = numeral % 100;
+
+    if (count >= 5 && count <= 20) {
+        declension = variation['2'];
+    } else {
+        count = count % 10;         // признаюсь честно, этот вложенный остаток от деления подсмотрела в интернете :-p
+        if (count === 1) {
+            declension = variation['0'];
+        } else if (count >= 2 && count <= 4) {
+            declension = variation['1'];
+        } else {
+            declension = variation['2'];
+        }
+    }
+    return declension;
+}
+
+function saySumWithDeclension() {
+    let sum = parseInt(prompt('Введите сумму:'));
+    if (sum > 0) {
+        alert(`Ваша сумма в ${sum} ${getDeclension(sum, ['рубль', 'рубля', 'рублей'])} успешно зачислена`);
+    } else {
+        alert('Необходимо ввести положительное число. Попробуйте еще раз.');
+        saySumWithDeclension();
     }
 }
 
-let count = parseInt(prompt('Введите сумму:'));
-alert(`Ваша сумма в ${count} ${getDeclensionByCount(count)} успешно зачислена`);
+saySumWithDeclension();
