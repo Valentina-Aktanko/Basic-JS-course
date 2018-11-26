@@ -16,11 +16,11 @@ function getDeclension(numeral, variation) {
     } else {
         count = count % 10;         // признаюсь честно, этот вложенный остаток от деления подсмотрела в интернете :-p
         if (count === 1) {
-            declension = variation['0'];
+            declension = variation[0];
         } else if (count >= 2 && count <= 4) {
-            declension = variation['1'];
+            declension = variation[1];
         } else {
-            declension = variation['2'];
+            declension = variation[2];
         }
     }
     return declension;
