@@ -26,6 +26,9 @@ function getDeclension(numeral, variation) {
     return declension;
 }
 
+/**
+ * Запрашивает у пользователя сумму, которую он желает положить в банк и выводит сообщение о зачислении
+ */
 function saySumWithDeclension() {
     let sum = parseInt(prompt('Введите сумму:'));
     if (sum > 0) {
