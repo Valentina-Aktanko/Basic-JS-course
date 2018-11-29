@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc1518c-0ca6-4d87-be55-902f2761a90c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson3/js5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/task5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/js5.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/js5.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="298" />
-          <entry key="js" value="5980" />
+          <entry key="js" value="6019" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="298" />
-          <entry key="JavaScript" value="5980" />
+          <entry key="JavaScript" value="6019" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +88,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson3/js5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="208">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc;n#getSumOfElements#0" />
-                <element signature="n#!!block;n#getSumOfElements#0" />
                 <element signature="n#!!doc;n#getMaxElement#0" />
               </folding>
             </state>
@@ -238,12 +235,12 @@
       <workItem from="1543207982737" duration="10000" />
       <workItem from="1543299891269" duration="648000" />
       <workItem from="1543368774874" duration="5490000" />
-      <workItem from="1543466062870" duration="9911000" />
+      <workItem from="1543466062870" duration="10471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48594000" />
+    <option name="totallyTimeSpent" value="49154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="261" y="21" width="1400" height="996" extended-state="0" />
@@ -472,11 +469,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson3/js5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="208">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc;n#getSumOfElements#0" />
-            <element signature="n#!!block;n#getSumOfElements#0" />
             <element signature="n#!!doc;n#getMaxElement#0" />
           </folding>
         </state>
