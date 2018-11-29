@@ -3,7 +3,7 @@
 const arr = [
     [2, 4, 6, 100],
     [1, 5, 10],
-    [],
+    [30],
 ];
 
 /**
@@ -12,7 +12,6 @@ const arr = [
  * @returns {number} - сумма элементов массива
  */
 function getSumOfElements(arr) {
-
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         sum = sum + parseInt(arr[i]);
@@ -26,7 +25,7 @@ function getSumOfElements(arr) {
  * @param {array} arr - исходный массив
  * @returns {number} - значение минимального элемента в массиве
  */
-function getMaxElement(arr) {
+function getMinElement(arr) {
 
     let minNumber = arr[0];
 
@@ -52,6 +51,6 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 console.log(`Массив с индексом [${maxSumOfArrayIndex}] - наибольший по сумме своих элементов.`);
-console.log(`Наименьший элемент в этом массиве - число ${getMaxElement(arr[maxSumOfArrayIndex])}.`);
+console.log(`Наименьший элемент в этом массиве - число ${getMinElement(arr[maxSumOfArrayIndex])}.`);
 
 
