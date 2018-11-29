@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc1518c-0ca6-4d87-be55-902f2761a90c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson3/js5.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/js5.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,13 +45,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="298" />
-          <entry key="js" value="6019" />
+          <entry key="js" value="6070" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="298" />
-          <entry key="JavaScript" value="6019" />
+          <entry key="JavaScript" value="6070" />
         </counts>
       </usages-collector>
     </session>
@@ -88,11 +89,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson3/js5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="736">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc;n#getSumOfElements#0" />
-                <element signature="n#!!doc;n#getMaxElement#0" />
               </folding>
             </state>
           </provider>
@@ -181,11 +181,6 @@
             <path>
               <item name="Basic-JS-course" type="b2602c69:ProjectViewProjectNode" />
               <item name="Basic-JS-course" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Basic-JS-course" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Basic-JS-course" type="462c0819:PsiDirectoryNode" />
               <item name="lesson3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -240,13 +235,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49154000" />
+    <option name="totallyTimeSpent" value="50531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="261" y="21" width="1400" height="996" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2962963" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30074075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -469,11 +464,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson3/js5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="736">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc;n#getSumOfElements#0" />
-            <element signature="n#!!doc;n#getMaxElement#0" />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,8 @@
 'use strict';
 
 const arr = [
-    [2, 4, 6, 100],
     [1, 5, 10],
+    [2, 4, 6, 100],
     [30],
 ];
 
@@ -43,10 +43,11 @@ let maxSumOfArray = getSumOfElements(arr[0]);
 
 // обход массива с массивами
 for (let i = 1; i < arr.length; i++) {
-
     // поиск массива с максимальной суммой элементов
-    if (getSumOfElements(arr[i]) > maxSumOfArray) {
+    let sumOfArray = getSumOfElements(arr[i]);
+    if (sumOfArray > maxSumOfArray) {
         maxSumOfArrayIndex = i;
+        maxSumOfArray = sumOfArray;
     }
 }
 
