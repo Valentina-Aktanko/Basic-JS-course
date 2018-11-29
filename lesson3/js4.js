@@ -6,6 +6,7 @@
  * @returns {boolean} - возвращает true, если число простое, и false - если составное.
  */
 function isPrimeNumber(num) {
+
     if (num < 2) {
         return false;
     }
