@@ -52,6 +52,6 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 console.log(`Массив с индексом [${maxSumOfArrayIndex}] - наибольший по сумме своих элементов.`);
-console.log(`Минимальное значение в массиме под индексом [${maxSumOfArrayIndex}] - число ${getMaxElement(arr[maxSumOfArrayIndex])}.`);
+console.log(`Наименьший элемент в этом массиве - число ${getMaxElement(arr[maxSumOfArrayIndex])}.`);
 
 
