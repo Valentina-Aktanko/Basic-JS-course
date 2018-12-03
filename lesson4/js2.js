@@ -22,34 +22,81 @@ const settings = {
 const player = {
     x: null,
     y: null,
+    rows: 0,
+    cols: 0,
 
     /**
      * Инициализация игрока и его метоположения.
      */
-    init(startX, startY) {
+    init(startX, startY, rowsCount, colsCount) {
         this.x = startX;
         this.y = startY;
+        this.rows = rowsCount;
+        this.cols = colsCount;
+    },
+
+    /**
+     * Вычисляет координаты следующей точки по направлению
+     * @param direction Направление движения
+     * @returns {{x: number, y: number}}
+     */
+    calculateСoordinates(direction) {
+        let tx = this.x;
+        let ty = this.y;
+        switch (direction) {
+            case 1:
+                tx--;
+                ty++;
+                break;
+            case 2:
+                ty++;
+                break;
+            case 3:
+                tx++;
+                ty++;
+                break;
+            case 4:
+                tx--;
+                break;
+            case 6:
+                tx++;
+                break;
+            case 7:
+                tx--;
+                ty--;
+                break;
+            case 8:
+                ty--;
+                break;
+            case 9:
+                tx++;
+                ty--;
+                break;
+        }
+        return {x: tx, y: ty};
+    },
+
+    /**
+     * Проверяет возможность хода в зависимости от координаты следубщей точки
+     * @param point {{}} - координаты следубщего хода
+     * @returns {boolean} - возможно ли совершить следубщий ход
+     */
+    checkNextPosition(point) {
+        return (point.x >= 0) && (point.x < this.rows) && (point.y >= 0) && ( point.y < this.cols);
     },
 
     /**
      * Двигает игрока по переданному направлению.
      * @param {int} direction Направление, в котором будет движение.
+     * @param {int} maxX Максимальная граничная координата по x.
+     * @param {int} maxY Максимальная граничная координата по y.
      */
     move(direction) {
-        // Определяем направление и обновляем местоположение игрока в зависимости от направления.
-        switch (direction) {
-            case 2:
-                this.y++;
-                break;
-            case 4:
-                this.x--;
-                break;
-            case 6:
-                this.x++;
-                break;
-            case 8:
-                this.y--;
-                break;
+        let point = this.calculateСoordinates(direction);
+        let check = this.checkNextPosition(point);
+        if (check) {
+            this.x = point.x;
+            this.y = point.y;
         }
     },
 };
@@ -68,7 +115,7 @@ const game = {
      */
     run() {
         // Инициализируем игрока, ставим его начальное местоположение
-        this.player.init(this.settings.startPositionX, this.settings.startPositionY);
+        this.player.init(this.settings.startPositionX, this.settings.startPositionY, this.settings.rowsCount, this.settings.colsCount);
         // Бесконечный цикл
         while (true) {
             // Отображаем нашу игру.
@@ -83,9 +130,10 @@ const game = {
                 return;
             }
 
-            // Двигаем игрока.
-            this.player.move(direction);
+            const nextPoint = this.player.move(direction);
         }
+
+        // this.player.move(direction);
     },
 
     /**
@@ -122,7 +170,7 @@ const game = {
      */
     getDirection() {
         // Доступные значения ввода.
-        const availableDirections = [-1, 2, 4, 6, 8];
+        const availableDirections = [-1, 1, 2, 3, 4, 6, 7, 8, 9];
 
         while (true) {
             // Получаем от пользователя направление.
