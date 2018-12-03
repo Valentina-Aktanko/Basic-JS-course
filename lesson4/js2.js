@@ -40,7 +40,7 @@ const player = {
      * @param direction Направление движения
      * @returns {{x: number, y: number}}
      */
-    calculateСoordinates(direction) {
+    getNextPosition(direction) {
         let tx = this.x;
         let ty = this.y;
         switch (direction) {
@@ -81,22 +81,19 @@ const player = {
      * @param point {{}} - координаты следубщего хода
      * @returns {boolean} - возможно ли совершить следубщий ход
      */
-    checkNextPosition(point) {
+    canPlayerMakeStep(point) {
         return (point.x >= 0) && (point.x < this.rows) && (point.y >= 0) && ( point.y < this.cols);
     },
 
     /**
      * Двигает игрока по переданному направлению.
      * @param {int} direction Направление, в котором будет движение.
-     * @param {int} maxX Максимальная граничная координата по x.
-     * @param {int} maxY Максимальная граничная координата по y.
      */
     move(direction) {
-        let point = this.calculateСoordinates(direction);
-        let check = this.checkNextPosition(point);
-        if (check) {
-            this.x = point.x;
-            this.y = point.y;
+        const nextPoint = this.getNextPosition(direction);
+        if (this.canPlayerMakeStep(nextPoint)) {
+            this.x = nextPoint.x;
+            this.y = nextPoint.y;
         }
     },
 };
@@ -132,8 +129,6 @@ const game = {
 
             const nextPoint = this.player.move(direction);
         }
-
-        // this.player.move(direction);
     },
 
     /**
