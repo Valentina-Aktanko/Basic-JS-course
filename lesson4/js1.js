@@ -13,8 +13,10 @@ function getDigitsOfNumber(num) {
     }
 
     /**
-     * Объект, сожержащий описание разрядов числа
-     * @type {{firstDigit: number, secondDigit: number, thirdDigit: number}}
+     * Объект, сожержащий описание разрядов числа.
+     * @property {number} firstDigit Первый разряд, единицы.
+     * @property {number} secondDigit Второй разряд, десятки.
+     * @property {number} thirdDigit Третий разряд, сотни.
      */
     const digits = {
         firstDigit : num%10,
