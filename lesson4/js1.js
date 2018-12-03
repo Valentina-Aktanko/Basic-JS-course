@@ -8,7 +8,7 @@
 function getDigitsOfNumber(num) {
 
     if (!(Number.isInteger(num)) || num < 0 || num > 999 || isNaN(num)) {
-        alert('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
+        console.log('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
         return {};
     }
 
