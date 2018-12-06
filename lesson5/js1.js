@@ -6,6 +6,9 @@ const chess = {
      */
     gameContainerElement: document.getElementById('game'),
 
+    /**
+     * Массив объектов всех шазматных фигур с описанием их свойств
+     */
     figures: [
         {name: 'rook', color: 'w', pos: 'a1'},
         {name: 'rook', color: 'b', pos: 'a8'},
@@ -44,6 +47,24 @@ const chess = {
     ],
 
     /**
+     * HTML-вывод шахматных фигур
+     */
+    figureHtml: {
+        pawnW: '&#9817;',
+        pawnB: '&#9723;',
+        rookW: '&#9814;',
+        rookB: '&#9820;',
+        knightW: '&#9816;',
+        knightB: '&#9822;',
+        bishopW: '&#9815;',
+        bishopB: '&#9821;',
+        queenW: '&#9813;',
+        queenB: '&#9819;',
+        kingW: '&#9812;',
+        kingB: '&#9818;',
+    },
+
+    /**
      * Метод отображения карты (игрового поля)
      */
     renderMap() {
@@ -78,32 +99,18 @@ const chess = {
     },
 
     /**
-     * HTML-вывод шахматных фигур
+     * Определяет, является ли фигура черной (закрашенной)
      * @param {number} rowNum Номер строки
      * @param {number} colNum Номер колонки
      * @returns {boolean} Признак, является ли ячейка закрашенной
      */
     isCellIsBlack(rowNum, colNum) {
-        return  rowNum > 0 && rowNum < 9 && // если строка не 0 и не 9
-                colNum < 9 && colNum > 0 && // если колонка не 0 и не 9
-                ((rowNum % 2 && colNum % 2) // если нечетная строка и четный столбец
+        return rowNum > 0 && rowNum < 9 && // если строка не 0 и не 9
+            colNum < 9 && colNum > 0 && // если колонка не 0 и не 9
+            ((rowNum % 2 && colNum % 2) // если нечетная строка и четный столбец
                 || !(rowNum % 2 || colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
     },
 
-    figureHtml: {
-        pawnW:      '&#9817;',
-        pawnB:      '&#9723;',
-        rookW:      '&#9814;',
-        rookB:      '&#9820;',
-        knightW:    '&#9816;',
-        knightB:    '&#9822;',
-        bishopW:    '&#9815;',
-        bishopB:    '&#9821;',
-        queenW:     '&#9813;',
-        queenB:     '&#9819;',
-        kingW:      '&#9812;',
-        kingB:      '&#9818;',
-    },
 };
 
 chess.renderMap();
