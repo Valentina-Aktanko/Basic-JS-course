@@ -10,40 +10,40 @@ const chess = {
      * Массив объектов всех шазматных фигур с описанием их свойств
      */
     figures: [
-        {name: 'rook', color: 'w', pos: 'a1'},
-        {name: 'rook', color: 'b', pos: 'a8'},
-        {name: 'knight', color: 'w', pos: 'b1'},
-        {name: 'knight', color: 'b', pos: 'b8'},
-        {name: 'bishop', color: 'w', pos: 'c1'},
-        {name: 'bishop', color: 'b', pos: 'c8'},
-        {name: 'queen', color: 'w', pos: 'd1'},
-        {name: 'queen', color: 'b', pos: 'd8'},
-        {name: 'king', color: 'w', pos: 'e1'},
-        {name: 'king', color: 'b', pos: 'e8'},
-        {name: 'bishops', color: 'w', pos: 'f1'},
-        {name: 'bishops', color: 'b', pos: 'f8'},
-        {name: 'knight', color: 'w', pos: 'g1'},
-        {name: 'knight', color: 'b', pos: 'g8'},
-        {name: 'rook', color: 'w', pos: 'h1'},
-        {name: 'rook', color: 'b', pos: 'h8'},
+        {name: 'rook', color: 'W', pos: 'a1'},
+        {name: 'rook', color: 'B', pos: 'a8'},
+        {name: 'knight', color: 'W', pos: 'b1'},
+        {name: 'knight', color: 'B', pos: 'b8'},
+        {name: 'bishop', color: 'W', pos: 'c1'},
+        {name: 'bishop', color: 'B', pos: 'c8'},
+        {name: 'queen', color: 'W', pos: 'd1'},
+        {name: 'queen', color: 'B', pos: 'd8'},
+        {name: 'king', color: 'W', pos: 'e1'},
+        {name: 'king', color: 'B', pos: 'e8'},
+        {name: 'bishops', color: 'W', pos: 'f1'},
+        {name: 'bishops', color: 'B', pos: 'f8'},
+        {name: 'knight', color: 'W', pos: 'g1'},
+        {name: 'knight', color: 'B', pos: 'g8'},
+        {name: 'rook', color: 'W', pos: 'h1'},
+        {name: 'rook', color: 'B', pos: 'h8'},
 
-        {name: 'pawn', color: 'w', pos: 'a2'},
-        {name: 'pawn', color: 'w', pos: 'b2'},
-        {name: 'pawn', color: 'w', pos: 'c2'},
-        {name: 'pawn', color: 'w', pos: 'd2'},
-        {name: 'pawn', color: 'w', pos: 'e2'},
-        {name: 'pawn', color: 'w', pos: 'f2'},
-        {name: 'pawn', color: 'w', pos: 'g2'},
-        {name: 'pawn', color: 'w', pos: 'h2'},
+        {name: 'pawn', color: 'W', pos: 'a2'},
+        {name: 'pawn', color: 'W', pos: 'b2'},
+        {name: 'pawn', color: 'W', pos: 'c2'},
+        {name: 'pawn', color: 'W', pos: 'd2'},
+        {name: 'pawn', color: 'W', pos: 'e2'},
+        {name: 'pawn', color: 'W', pos: 'f2'},
+        {name: 'pawn', color: 'W', pos: 'g2'},
+        {name: 'pawn', color: 'W', pos: 'h2'},
 
-        {name: 'pawn', color: 'w', pos: 'a7'},
-        {name: 'pawn', color: 'w', pos: 'b7'},
-        {name: 'pawn', color: 'w', pos: 'c7'},
-        {name: 'pawn', color: 'w', pos: 'd7'},
-        {name: 'pawn', color: 'w', pos: 'e7'},
-        {name: 'pawn', color: 'w', pos: 'f7'},
-        {name: 'pawn', color: 'w', pos: 'g7'},
-        {name: 'pawn', color: 'w', pos: 'h7'},
+        {name: 'pawn', color: 'B', pos: 'a7'},
+        {name: 'pawn', color: 'B', pos: 'b7'},
+        {name: 'pawn', color: 'B', pos: 'c7'},
+        {name: 'pawn', color: 'B', pos: 'd7'},
+        {name: 'pawn', color: 'B', pos: 'e7'},
+        {name: 'pawn', color: 'B', pos: 'f7'},
+        {name: 'pawn', color: 'B', pos: 'g7'},
+        {name: 'pawn', color: 'B', pos: 'h7'},
     ],
 
     /**
@@ -111,6 +111,20 @@ const chess = {
                 || !(rowNum % 2 || colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
     },
 
+    renderFigures() {
+        // пробегаем все фигуры на поле.
+        this.figures.forEach(function (element) {
+            console.log(element);
+            const figure = element;
+            // Получаем имя фигуры и цвет в одну строку.
+            const figureHtmlProperty = figure.name + figure.color;
+            const figureCode = this.figureHtml[figureHtmlProperty];
+            // Выводим ее прям в html для примера, вам надо вставлять в ячейку.
+            // document.body.innerHTML = figureCode;
+        });
+    },
+
 };
 
 chess.renderMap();
+chess.renderFigures();
