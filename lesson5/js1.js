@@ -6,6 +6,42 @@ const chess = {
      */
     gameContainerElement: document.getElementById('game'),
 
+    figures: [
+        {name: 'rook', color: 'w', pos: 'a1'},
+        {name: 'rook', color: 'b', pos: 'a8'},
+        {name: 'knight', color: 'w', pos: 'b1'},
+        {name: 'knight', color: 'b', pos: 'b8'},
+        {name: 'bishops', color: 'w', pos: 'c1'},
+        {name: 'bishops', color: 'b', pos: 'c8'},
+        {name: 'king', color: 'w', pos: 'd1'},
+        {name: 'king', color: 'b', pos: 'd8'},
+        {name: 'queen', color: 'w', pos: 'e1'},
+        {name: 'queen', color: 'b', pos: 'e8'},
+        {name: 'bishops', color: 'w', pos: 'f1'},
+        {name: 'bishops', color: 'b', pos: 'f8'},
+        {name: 'knight', color: 'w', pos: 'g1'},
+        {name: 'knight', color: 'b', pos: 'g8'},
+        {name: 'rook', color: 'w', pos: 'h1'},
+        {name: 'rook', color: 'b', pos: 'h8'},
+
+        {name: 'pawn', color: 'w', pos: 'a2'},
+        {name: 'pawn', color: 'w', pos: 'b2'},
+        {name: 'pawn', color: 'w', pos: 'c2'},
+        {name: 'pawn', color: 'w', pos: 'd2'},
+        {name: 'pawn', color: 'w', pos: 'e2'},
+        {name: 'pawn', color: 'w', pos: 'f2'},
+        {name: 'pawn', color: 'w', pos: 'g2'},
+        {name: 'pawn', color: 'w', pos: 'h2'},
+
+        {name: 'pawn', color: 'w', pos: 'a7'},
+        {name: 'pawn', color: 'w', pos: 'b7'},
+        {name: 'pawn', color: 'w', pos: 'c7'},
+        {name: 'pawn', color: 'w', pos: 'd7'},
+        {name: 'pawn', color: 'w', pos: 'e7'},
+        {name: 'pawn', color: 'w', pos: 'f7'},
+        {name: 'pawn', color: 'w', pos: 'g7'},
+        {name: 'pawn', color: 'w', pos: 'h7'},
+    ],
 
     /**
      * Метод отображения карты (игрового поля)
