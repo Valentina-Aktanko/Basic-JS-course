@@ -79,6 +79,10 @@ const chess = {
 
             for (let col = 0; col < 10; col++) {
                 const cell = document.createElement('td');
+                // установим data-атрибуты ячейке
+                cell.setAttribute('rowName', rowsName[row]);
+                cell.setAttribute('colName', colsName[col]);
+                // вывод ячейки
                 trElem.appendChild(cell);
 
                 if ((row === 0 || row === 9) && colsName[col] !== 0) {
@@ -118,9 +122,10 @@ const chess = {
             const figure = element;
             // Получаем имя фигуры и цвет в одну строку.
             const figureHtmlProperty = figure.name + figure.color;
+            // получаем изображение фигуры (html-код)
             const figureCode = this.figureHtml[figureHtmlProperty];
             // Выводим ее прям в html для примера, вам надо вставлять в ячейку.
-            // document.body.innerHTML = figureCode;
+            document.body.innerHTML = figureCode;
         });
     },
 
