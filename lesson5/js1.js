@@ -11,12 +11,12 @@ const chess = {
         {name: 'rook', color: 'b', pos: 'a8'},
         {name: 'knight', color: 'w', pos: 'b1'},
         {name: 'knight', color: 'b', pos: 'b8'},
-        {name: 'bishops', color: 'w', pos: 'c1'},
-        {name: 'bishops', color: 'b', pos: 'c8'},
-        {name: 'king', color: 'w', pos: 'd1'},
-        {name: 'king', color: 'b', pos: 'd8'},
-        {name: 'queen', color: 'w', pos: 'e1'},
-        {name: 'queen', color: 'b', pos: 'e8'},
+        {name: 'bishop', color: 'w', pos: 'c1'},
+        {name: 'bishop', color: 'b', pos: 'c8'},
+        {name: 'queen', color: 'w', pos: 'd1'},
+        {name: 'queen', color: 'b', pos: 'd8'},
+        {name: 'king', color: 'w', pos: 'e1'},
+        {name: 'king', color: 'b', pos: 'e8'},
         {name: 'bishops', color: 'w', pos: 'f1'},
         {name: 'bishops', color: 'b', pos: 'f8'},
         {name: 'knight', color: 'w', pos: 'g1'},
@@ -78,7 +78,7 @@ const chess = {
     },
 
     /**
-     *
+     * HTML-вывод шахматных фигур
      * @param {number} rowNum Номер строки
      * @param {number} colNum Номер колонки
      * @returns {boolean} Признак, является ли ячейка закрашенной
@@ -88,6 +88,21 @@ const chess = {
                 colNum < 9 && colNum > 0 && // если колонка не 0 и не 9
                 ((rowNum % 2 && colNum % 2) // если нечетная строка и четный столбец
                 || !(rowNum % 2 || colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
+    },
+
+    figureHtml: {
+        pawnW:      '&#9817;',
+        pawnB:      '&#9723;',
+        rookW:      '&#9814;',
+        rookB:      '&#9820;',
+        knightW:    '&#9816;',
+        knightB:    '&#9822;',
+        bishopW:    '&#9815;',
+        bishopB:    '&#9821;',
+        queenW:     '&#9813;',
+        queenB:     '&#9819;',
+        kingW:      '&#9812;',
+        kingB:      '&#9818;',
     },
 };
 
