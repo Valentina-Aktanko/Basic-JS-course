@@ -11,9 +11,9 @@ const chess = {
      * Метод отображения карты (игрового поля)
      */
     renderMap() {
-        // нахвания колонок
+        // массив с названиями колонок
         const colsName = [0, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 0];
-
+        // массив с названиями строк
         const rowsName = [0, '8', '7', '6', '5', '4', '3', '2', '1', 0];
 
         for (let row = 0; row < 10; row++) {
@@ -41,10 +41,17 @@ const chess = {
         ;
     },
 
+    /**
+     *
+     * @param {number} rowNum Номер строки
+     * @param {number} colNum Номер колонки
+     * @returns {boolean} Признак, является ли ячейка закрашенной
+     */
     isCellIsBlack(rowNum, colNum) {
-        return  rowNum > 0 && rowNum < 9 &&
-                colNum < 9 && colNum > 0 &&
-                ((rowNum % 2 && colNum % 2) || !(rowNum % 2 || colNum % 2));
+        return  rowNum > 0 && rowNum < 9 && // если строка не 0 и не 9
+                colNum < 9 && colNum > 0 && // если колонка не 0 и не 9
+                ((rowNum % 2 && colNum % 2) // если нечетная строка и четный столбец
+                || !(rowNum % 2 || colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
     },
 };
 
