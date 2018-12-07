@@ -110,22 +110,27 @@ const chess = {
      */
     isCellIsBlack(rowNum, colNum) {
         return rowNum > 0 && rowNum < 9 && // если строка не 0 и не 9
-            colNum < 9 && colNum > 0 && // если колонка не 0 и не 9
-            ((rowNum % 2 && colNum % 2) // если нечетная строка и четный столбец
-                || !(rowNum % 2 || colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
+            colNum > 0 && colNum < 9 && // если колонка не 0 и не 9
+            ((rowNum % 2 && !(colNum % 2)) // если нечетная строка и четный столбец
+                || (!(rowNum % 2) && colNum % 2)); // или четная строка и нечетный столбец (тут инверсия && даёт ||)
     },
 
     renderFigures() {
         // пробегаем все фигуры на поле.
-        this.figures.forEach(function (element) {
+        this.figures.forEach(element => {
             console.log(element);
             const figure = element;
             // Получаем имя фигуры и цвет в одну строку.
             const figureHtmlProperty = figure.name + figure.color;
             // получаем изображение фигуры (html-код)
             const figureCode = this.figureHtml[figureHtmlProperty];
-            // Выводим ее прям в html для примера, вам надо вставлять в ячейку.
-            document.body.innerHTML = figureCode;
+            // обойдем в цилке все элементы
+
+            let elems = this.gameContainerElement.childNodes;
+            console.log(elems);
+
+            // this.gameContainerElement.childNodes[1] = figureCode;
+
         });
     },
 
