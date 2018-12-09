@@ -17,7 +17,21 @@ const gallery = {
         openedImageScreenClass: 'galleryWrapper__screen',
         openedImageCloseBtnClass: 'galleryWrapper__close',
         openedImageCloseBtnSrc: 'images/gallery/close.png',
-        openedImageNotFound: 'images/gallery/notFound.png',
+        openedImageNotFoundSrc: 'images/gallery/notFound.png',
+        openedImageBackSrc: 'images/gallery/back.png',
+        openedImageNextSrc: 'images/gallery/next.png',
+        openedImageBackClass: 'galleryWrapper__back',
+        openedImageNextClass: 'galleryWrapper__next',
+    },
+
+    openedImageEl: null,
+
+    getNextImage(currentImage) {
+        return 1;
+    },
+
+    getPrevImage(currentImage) {
+        return 1;
     },
 
     /**
@@ -46,6 +60,8 @@ const gallery = {
         if (event.target.tagName !== 'IMG') {
             return;
         }
+        // Сохраним открываемую миниатюру в свойство объекта gallery.
+        this.openedImageEl = event.target;
 
         // Открываем картинку с полученным из целевого тега (data-full_image_url аттрибут).
         this.openImage(event.target.dataset.full_image_url);
@@ -58,6 +74,7 @@ const gallery = {
     openImage(src) {
         // Получаем контейнер для открытой картинки, в нем находим тег img и ставим ему нужный src.
         this.getScreenContainer().querySelector(`.${this.settings.openedImageClass}`).src = src;
+
     },
 
     /**
@@ -85,6 +102,22 @@ const gallery = {
         const galleryWrapperElement = document.createElement('div');
         galleryWrapperElement.classList.add(this.settings.openedImageWrapperClass);
 
+        //Создаем картинку для стрелки назад, ставим класс, src и добавляем её в контейнер-обёртку.
+        const galleryWrapper__back = new Image();
+        galleryWrapper__back.classList.add(this.settings.openedImageBackClass);
+        galleryWrapper__back.src = this.settings.openedImageBackSrc;
+        galleryWrapper__back.alt = 'Назад';
+        galleryWrapper__back.addEventListener('click', () => getPrevImage(this.openedImageEl))
+        galleryWrapperElement.appendChild(galleryWrapper__back);
+
+        //Создаем картинку для стрелки Вперед, ставим класс, src и добавляем её в контейнер-обёртку.
+        const galleryWrapper__next = new Image();
+        galleryWrapper__next.classList.add(this.settings.openedImageNextClass);
+        galleryWrapper__next.src = this.settings.openedImageNextSrc;
+        galleryWrapper__next.alt = 'Вперед';
+        galleryWrapper__next.addEventListener('click', () => getNextImage(this.openedImageEl))
+        galleryWrapperElement.appendChild(galleryWrapper__next);
+
         // Создаем контейнер занавеса, ставим ему класс и добавляем в контейнер-обертку.
         const galleryScreenElement = document.createElement('div');
         galleryScreenElement.classList.add(this.settings.openedImageScreenClass);
@@ -100,7 +133,7 @@ const gallery = {
         // Создаем картинку, которую хотим открыть, ставим класс и добавляем ее в контейнер-обертку.
         const image = new Image();
         image.classList.add(this.settings.openedImageClass);
-        image.addEventListener('error', () => image.src = this.settings.openedImageNotFound);
+        image.addEventListener('error', () => image.src = this.settings.openedImageNotFoundSrc);
         galleryWrapperElement.appendChild(image);
 
         // Добавляем контейнер-обертку в тег body.
