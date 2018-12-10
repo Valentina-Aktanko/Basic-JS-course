@@ -24,14 +24,41 @@ const gallery = {
         openedImageNextClass: 'galleryWrapper__next',
     },
 
+    /**
+     * {Element} Хранит последнее открытое изображение (миниатюру)
+     */
     openedImageEl: null,
 
+    /**
+     * Возвращает следующий элемент (картинку) от открытой или первую картинку в контейнере,
+     * если текущая открытая картинка последняя.
+     * @returns {Element} Следующую картинку от текущей открытой.
+     */
     getNextImage(currentImage) {
-        return 1;
+        // Получаем элемент справа от текущей открытой картинки.
+        let nextImageEl = currentImage.nextElementSibling;
+        // Если элемент справа есть, его и возвращаем, если нет, то берем первый элемент в контейнере миниатюр.
+        if (nextImageEl !== null) {
+            return nextImageEl;
+        } else {
+            return document.querySelector(this.settings.previewSelector + ' img');
+        }
     },
 
+    /**
+     * Возвращает предыдущий элемент (картинку) от открытой или последнюю картинку в контейнере,
+     * если текущая открытая картинка первая.
+     * @returns {Element} Предыдущую картинку от текущей открытой.
+     */
     getPrevImage(currentImage) {
-        return 1;
+        // Получаем элемент слева от текущей открытой картинки.
+        let prevImageEl = currentImage.previousElementSibling;
+        // Если элемент слева есть, его и возвращаем, если нет, то берем последний элемент в контейнере миниатюр.
+        if (prevImageEl !== null) {
+            return prevImageEl;
+        } else {
+            return document.querySelector(this.settings.previewSelector + ' img:last-of-type');
+        }
     },
 
     /**
@@ -60,7 +87,7 @@ const gallery = {
         if (event.target.tagName !== 'IMG') {
             return;
         }
-        // Сохраним открываемую миниатюру в свойство объекта gallery.
+        // Сохраним элемент открываемого изображения (миниатюры) в свойство объекта gallery.
         this.openedImageEl = event.target;
 
         // Открываем картинку с полученным из целевого тега (data-full_image_url аттрибут).
@@ -107,7 +134,11 @@ const gallery = {
         galleryWrapper__back.classList.add(this.settings.openedImageBackClass);
         galleryWrapper__back.src = this.settings.openedImageBackSrc;
         galleryWrapper__back.alt = 'Назад';
-        galleryWrapper__back.addEventListener('click', () => getPrevImage(this.openedImageEl))
+        galleryWrapper__back.addEventListener('click', () => {
+            let prevImageEl = this.getPrevImage(this.openedImageEl);
+            this.openImage(prevImageEl.dataset.full_image_url);
+            this.openedImageEl = prevImageEl;
+        });
         galleryWrapperElement.appendChild(galleryWrapper__back);
 
         //Создаем картинку для стрелки Вперед, ставим класс, src и добавляем её в контейнер-обёртку.
@@ -115,7 +146,11 @@ const gallery = {
         galleryWrapper__next.classList.add(this.settings.openedImageNextClass);
         galleryWrapper__next.src = this.settings.openedImageNextSrc;
         galleryWrapper__next.alt = 'Вперед';
-        galleryWrapper__next.addEventListener('click', () => getNextImage(this.openedImageEl))
+        galleryWrapper__next.addEventListener('click', () => {
+            let nextImageEl = this.getNextImage(this.openedImageEl);
+            this.openImage(nextImageEl.dataset.full_image_url);
+            this.openedImageEl = nextImageEl;
+        });
         galleryWrapperElement.appendChild(galleryWrapper__next);
 
         // Создаем контейнер занавеса, ставим ему класс и добавляем в контейнер-обертку.
