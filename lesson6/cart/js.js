@@ -42,7 +42,7 @@ const basket = {
     },
 
     buttonClickHandler(event) {
-        this.add(event.target.dataset.data-name, event.target.dataset.data-price);
+        this.add(event.target.dataset.name, event.target.dataset.price);
 
     },
 
@@ -65,7 +65,10 @@ const basket = {
      * @param goodName Название товара.
      * @param goodPrice Цена товара.
      */
-    add(goodName, goodPrice) {},
+    add(goodName, goodPrice) {
+        this.goods.push({price: goodPrice, name: goodName});
+    },
+
 };
 
 basket.init();
