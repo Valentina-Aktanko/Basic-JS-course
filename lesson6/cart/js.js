@@ -23,7 +23,11 @@ const basket = {
         // Записываем настройки, которые передал пользователь
         Object.assign(this.settings, settings);
 
-        this.countEl = document.getElementById(this.settings.countSelector);
+        // Получвем DOM-элемент, где показывается количество товаров
+        this.countEl = document.querySelector(this.settings.countSelector);
+
+        // Получвем DOM-элемент, где показывается цена товаров
+        this.countEl = document.querySelector(this.settings.priceSelector);
 
     },
 
