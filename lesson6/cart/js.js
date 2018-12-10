@@ -33,10 +33,16 @@ const basket = {
         // повесим обработчики на все кнопки "купить"
         let btnElements = document.getElementsByClassName(this.settings.btnClass);
 
-        for (let btnEl in btnElements) {
+        for (let btnEl of btnElements) {
+            btnEl.addEventListener('click', event => this.buttonClickHandler(event));
         }
 
         this.render();
+
+    },
+
+    buttonClickHandler(event) {
+        this.add(event.target.dataset.data-name, event.target.dataset.data-price);
 
     },
 
