@@ -74,59 +74,69 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
-          <entry key="js" value="4" />
+          <entry key="html" value="3" />
+          <entry key="js" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="4" />
+          <entry key="HTML" value="3" />
+          <entry key="JavaScript" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="165" />
-          <entry key="js" value="3658" />
+          <entry key="html" value="755" />
+          <entry key="js" value="4873" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="165" />
-          <entry key="JavaScript" value="3658" />
+          <entry key="HTML" value="755" />
+          <entry key="JavaScript" value="4873" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson6/gallery/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lesson6/cart/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="51" column="38" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="840">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson6/cart/js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lesson6/gallery/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+            <state relative-caret-position="411">
+              <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
               <folding>
-                <element signature="e#1722#1943#0" />
-                <element signature="e#1396#1530#0" />
-                <element signature="e#1559#2115#0" />
-                <element signature="e#2122#2325#0" />
-                <element signature="e#2359#2802#0" />
-                <element signature="e#4088#4195#0" />
-                <element signature="e#2936#3141#0" />
-                <element signature="e#3148#3284#0" />
-                <element signature="e#3310#3765#0" />
-                <element signature="e#3772#3861#0" />
-                <element signature="e#6436#6507#0" />
-                <element signature="e#6520#6613#0" />
+                <element signature="e#1361#1580#0" />
+                <element signature="e#1612#2033#0" />
+                <element signature="e#2040#2261#0" />
+                <element signature="e#2293#2732#0" />
+                <element signature="e#3702#4168#0" />
+                <element signature="e#4175#4282#0" />
+                <element signature="e#4302#4507#0" />
+                <element signature="e#4514#4650#0" />
+                <element signature="e#4676#5131#0" />
+                <element signature="e#5138#5227#0" />
+                <element signature="e#5256#8113#0" />
+                <element signature="e#5877#6067#0" />
+                <element signature="e#6542#6732#0" />
               </folding>
             </state>
           </provider>
@@ -164,6 +174,7 @@
       <find>updateOpenedImage</find>
       <find>openedImageEl</find>
       <find>getPrevImage</find>
+      <find>init</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,7 +224,11 @@
         <option value="$PROJECT_DIR$/lesson5/js.js" />
         <option value="$PROJECT_DIR$/lesson5/task3.html" />
         <option value="$PROJECT_DIR$/lesson5/js3.js" />
+        <option value="$PROJECT_DIR$/lesson6/cart/img/index.html" />
+        <option value="$PROJECT_DIR$/lesson6/cart/оы.js" />
         <option value="$PROJECT_DIR$/lesson6/gallery/js.js" />
+        <option value="$PROJECT_DIR$/lesson6/cart/js.js" />
+        <option value="$PROJECT_DIR$/lesson6/cart/index.html" />
       </list>
     </option>
   </component>
@@ -258,6 +273,19 @@
               <item name="Basic-JS-course" type="b2602c69:ProjectViewProjectNode" />
               <item name="Basic-JS-course" type="462c0819:PsiDirectoryNode" />
               <item name="lesson6" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basic-JS-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic-JS-course" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson6" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basic-JS-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic-JS-course" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson6" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -273,6 +301,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Basic-JS-course\lesson6\cart" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -319,13 +352,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127540000" />
+    <option name="totallyTimeSpent" value="132563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49763033" visible="true" weight="0.2260128" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49763033" visible="true" weight="0.1444563" />
       <window_info id="Structure" order="1" sideWeight="0.50236964" side_tool="true" weight="0.64237666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -359,6 +392,12 @@
           <url>file://$PROJECT_DIR$/lesson5/game.js</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lesson6/gallery/js.js</url>
+          <line>140</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -645,30 +684,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson6/gallery/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson6/cart/оы.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson6/gallery/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+        <state relative-caret-position="411">
+          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
           <folding>
-            <element signature="e#1722#1943#0" />
-            <element signature="e#1396#1530#0" />
-            <element signature="e#1559#2115#0" />
-            <element signature="e#2122#2325#0" />
-            <element signature="e#2359#2802#0" />
-            <element signature="e#4088#4195#0" />
-            <element signature="e#2936#3141#0" />
-            <element signature="e#3148#3284#0" />
-            <element signature="e#3310#3765#0" />
-            <element signature="e#3772#3861#0" />
-            <element signature="e#6436#6507#0" />
-            <element signature="e#6520#6613#0" />
+            <element signature="e#1361#1580#0" />
+            <element signature="e#1612#2033#0" />
+            <element signature="e#2040#2261#0" />
+            <element signature="e#2293#2732#0" />
+            <element signature="e#3702#4168#0" />
+            <element signature="e#4175#4282#0" />
+            <element signature="e#4302#4507#0" />
+            <element signature="e#4514#4650#0" />
+            <element signature="e#4676#5131#0" />
+            <element signature="e#5138#5227#0" />
+            <element signature="e#5256#8113#0" />
+            <element signature="e#5877#6067#0" />
+            <element signature="e#6542#6732#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson6/cart/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson6/cart/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
