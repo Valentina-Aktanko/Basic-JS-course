@@ -10,6 +10,7 @@ const basket = {
     settings: {
         countSelector: '#basket-count',
         priceSelector: '#basket-price',
+        btnClass: 'buy-button',
     },
 
     goods: [],
@@ -27,7 +28,15 @@ const basket = {
         this.countEl = document.querySelector(this.settings.countSelector);
 
         // Получвем DOM-элемент, где показывается цена товаров
-        this.countEl = document.querySelector(this.settings.priceSelector);
+        this.priceEl = document.querySelector(this.settings.priceSelector);
+
+        // повесим обработчики на все кнопки "купить"
+        let btnElements = document.getElementsByClassName(this.settings.btnClass);
+
+        for (let btnEl in btnElements) {
+        }
+
+        this.render();
 
     },
 
