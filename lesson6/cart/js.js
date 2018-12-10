@@ -43,6 +43,7 @@ const basket = {
 
     buttonClickHandler(event) {
         this.add(event.target.dataset.name, event.target.dataset.price);
+        this.render();
 
     },
 
@@ -50,6 +51,10 @@ const basket = {
      * Отображает количество всех товаров и их цену.
      */
     render() {
+        // alert(this.getGoodPrice());
+        document.querySelector(this.settings.priceSelector).innerHTML = this.getGoodPrice().toString();
+        document.querySelector(this.settings.countSelector).innerHTML = this.goods.length.toString();
+
     },
 
     /**
@@ -57,6 +62,13 @@ const basket = {
      * @returns {number} Возвращает цену всех купленных товаров.
      */
     getGoodPrice() {
+        let price = 0;
+
+        for (let i = 0; i < this.goods.length; i++) {
+            price += +(this.goods[i].price);
+        }
+
+        return price;
     },
 
     /**
