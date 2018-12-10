@@ -34,17 +34,11 @@ const basket = {
         let btnElements = document.getElementsByClassName(this.settings.btnClass);
 
         for (let btnEl of btnElements) {
-            btnEl.addEventListener('click', event => this.buttonClickHandler(event));
+            btnEl.addEventListener('click', (event) => {
+                this.add(event.target.dataset.name, event.target.dataset.price);
+                this.render();
+            });
         }
-
-        this.render();
-
-    },
-
-    buttonClickHandler(event) {
-        this.add(event.target.dataset.name, event.target.dataset.price);
-        this.render();
-
     },
 
     /**
