@@ -95,7 +95,7 @@ const map = {
 
         snakePointsArray.forEach((point, idx) => {
             const snakeCell = this.cells[`x${point.x}_y${point.y}`];
-            snakeCell.classList.add(idx === 0 ? 'snakeHead' : 'body');
+            snakeCell.classList.add(idx === 0 ? 'snakeHead' : 'snakeBody');
             this.usedCells.push(snakeCell);
         });
 
@@ -113,10 +113,15 @@ const snake = {
     init(startBody, direction) {
         this.body = startBody;
         this.direction = direction;
+        this.lastStepDirection = direction;
     },
 
     getBody() {
         return this.body;
+    },
+
+    getLastStepDirection() {
+        return this.lastStepDirection;
     },
 
     getNextStepPoint() {
@@ -127,7 +132,7 @@ const snake = {
             case 'right':
                 return {x: firstPoint.x + 1, y: firstPoint.y};
             case 'down':
-                return {x: firstPoint.x , y: firstPoint.y + 1};
+                return {x: firstPoint.x, y: firstPoint.y + 1};
             case 'left':
                 return {x: firstPoint.x - 1, y: firstPoint.y};
         }
@@ -140,13 +145,19 @@ const snake = {
     makeStep() {
         this.body.unshift(this.getNextStepPoint());
         this.body.pop();
+        this.lastStepDirection = this.direction;
     },
 
     setDirection(direction) {
         this.direction = direction;
     },
 
-
+    growUp() {
+        const lastBodyIdx = this.body.length - 1;
+        const lastBodyPoint = this.body[lastBodyIdx];
+        const lastBodyPointClone = Object.assign({}, lastBodyPoint);
+        this.body.push(lastBodyPointClone);
+    },
 };
 
 const food = {
@@ -163,6 +174,10 @@ const food = {
     setCoordinates(point) {
         this.x = point.x;
         this.y = point.y;
+    },
+
+    isOnPoint(point) {
+        return point.x === this.x && point.y === this.y;
     },
 };
 
@@ -253,6 +268,14 @@ const game = {
             return this.finish();
         }
 
+        if (food.isOnPoint(this.snake.getNextStepPoint())) {
+            this.snake.growUp();
+            this.food.setCoordinates(this.getRandomFreeCoordinates());
+            if (this.isGameWon()) {
+                this.finish();
+            }
+        }
+
         this.snake.makeStep();
         this.render();
     },
@@ -307,9 +330,12 @@ const game = {
     },
 
     canSetDirection(direction) {
-        if (direction === 'up' && this.snake.direction === 'down') {
-            return false;
-        }
+        const lastStepDirection = this.snake.getLastStepDirection();
+
+        return direction === 'up' && lastStepDirection !== 'down' ||
+            direction === 'right' && lastStepDirection !== 'left' ||
+            direction === 'down' && lastStepDirection !== 'up' ||
+            direction === 'left' && lastStepDirection !== 'right';
     },
 
     canMakeStep() {
@@ -341,6 +367,10 @@ const game = {
                 return rndPoint;
             }
         }
+    },
+
+    isGameWon() {
+        return this.snake.getBody().length > this.config.getWinFoodVount();
     },
 };
 
