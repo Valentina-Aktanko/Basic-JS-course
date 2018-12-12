@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4cc1518c-0ca6-4d87-be55-902f2761a90c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/snake/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/snake/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/snake/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/snake/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +19,7 @@
     <session id="-1947631323">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
@@ -25,6 +27,7 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.38" value="3" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.49" value="1" />
@@ -32,22 +35,22 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
+          <entry key="css" value="2" />
           <entry key="html" value="38" />
-          <entry key="js" value="41" />
+          <entry key="js" value="42" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="HTML" value="38" />
-          <entry key="JavaScript" value="41" />
+          <entry key="JavaScript" value="42" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -55,14 +58,14 @@
         <counts>
           <entry key="css" value="336" />
           <entry key="html" value="1065" />
-          <entry key="js" value="16545" />
+          <entry key="js" value="18860" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="336" />
           <entry key="HTML" value="1065" />
-          <entry key="JavaScript" value="16545" />
+          <entry key="JavaScript" value="18860" />
         </counts>
       </usages-collector>
     </session>
@@ -106,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lesson6/cart/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="544">
               <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
             </state>
           </provider>
@@ -115,13 +118,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson7/snake/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="133" column="37" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
+            <state relative-caret-position="361">
+              <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
               <folding>
+                <element signature="e#127#1556#0" />
                 <element signature="e#167#226#0" />
-                <element signature="e#244#361#0" />
-                <element signature="e#2844#2860#0" />
+                <element signature="e#248#295#0" />
+                <element signature="e#317#364#0" />
+                <element signature="e#382#425#0" />
+                <element signature="e#450#500#0" />
+                <element signature="e#518#1553#0" />
+                <element signature="e#1571#2717#0" />
+                <element signature="e#1643#2279#0" />
+                <element signature="e#2280#2714#0" />
+                <element signature="e#2998#3079#0" />
+                <element signature="e#3286#3688#0" />
+                <element signature="e#3772#3947#0" />
+                <element signature="e#3558#3566#0" />
+                <element signature="e#4059#4066#0" />
+                <element signature="e#4080#4087#0" />
+                <element signature="e#4103#4110#0" />
+                <element signature="e#4923#4939#0" />
+                <element signature="e#5290#5557#0" />
+                <element signature="e#5610#5626#0" />
+                <element signature="e#5655#5671#0" />
+                <element signature="e#3274#3429#0" />
+                <element signature="e#4326#4807#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson7/snake/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -163,6 +195,7 @@
       <find>'click'</find>
       <find>getGoodPrice</find>
       <find>buttonClickHandler</find>
+      <find>onsole.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,6 +253,7 @@
         <option value="$PROJECT_DIR$/lesson7/style.css" />
         <option value="$PROJECT_DIR$/lesson7/index.html" />
         <option value="$PROJECT_DIR$/lesson7/js.js" />
+        <option value="$PROJECT_DIR$/lesson7/snake/style.css" />
         <option value="$PROJECT_DIR$/lesson7/snake/js.js" />
       </list>
     </option>
@@ -237,9 +271,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1145" />
-    <option name="width" value="775" />
-    <option name="height" value="1036" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -249,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,6 +305,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,19 +362,20 @@
       <workItem from="1544087407986" duration="12092000" />
       <workItem from="1544136244716" duration="17831000" />
       <workItem from="1544398715019" duration="17181000" />
-      <workItem from="1544481898588" duration="12302000" />
+      <workItem from="1544481898588" duration="12399000" />
+      <workItem from="1544567610784" duration="9100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151071000" />
+    <option name="totallyTimeSpent" value="160268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1145" y="0" width="775" height="1036" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49763033" weight="0.83076924" />
-      <window_info id="Structure" order="1" sideWeight="0.50236964" side_tool="true" weight="0.64237666" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49763033" weight="0.83" />
+      <window_info id="Structure" order="1" sideWeight="0.50236964" side_tool="true" weight="0.3511111" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
@@ -383,13 +418,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson1/js5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson1/js3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -636,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson5/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="205" column="25" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="25" />
-          <folding>
-            <element signature="e#1031#2507#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson5/js3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -678,27 +696,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson7/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson7/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson7/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson7/style.css" />
+    <entry file="file://$PROJECT_DIR$/lesson7/index.html" />
+    <entry file="file://$PROJECT_DIR$/lesson7/js.js" />
     <entry file="file://$PROJECT_DIR$/lesson6/cart/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -708,19 +708,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson6/cart/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
+        <state relative-caret-position="544">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson7/snake/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson5/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="175" column="55" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+          <folding>
+            <element signature="e#1031#2507#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson7/snake/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="133" column="37" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
+        <state relative-caret-position="361">
+          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
           <folding>
+            <element signature="e#127#1556#0" />
             <element signature="e#167#226#0" />
-            <element signature="e#244#361#0" />
-            <element signature="e#2844#2860#0" />
+            <element signature="e#248#295#0" />
+            <element signature="e#317#364#0" />
+            <element signature="e#382#425#0" />
+            <element signature="e#450#500#0" />
+            <element signature="e#518#1553#0" />
+            <element signature="e#1571#2717#0" />
+            <element signature="e#1643#2279#0" />
+            <element signature="e#2280#2714#0" />
+            <element signature="e#2998#3079#0" />
+            <element signature="e#3286#3688#0" />
+            <element signature="e#3772#3947#0" />
+            <element signature="e#3558#3566#0" />
+            <element signature="e#4059#4066#0" />
+            <element signature="e#4080#4087#0" />
+            <element signature="e#4103#4110#0" />
+            <element signature="e#4923#4939#0" />
+            <element signature="e#5290#5557#0" />
+            <element signature="e#5610#5626#0" />
+            <element signature="e#5655#5671#0" />
+            <element signature="e#3274#3429#0" />
+            <element signature="e#4326#4807#0" />
           </folding>
         </state>
       </provider>
