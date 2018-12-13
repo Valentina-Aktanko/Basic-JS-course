@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Змейка</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div id="game-wrap">
+<!--1. Выводить счёт в режиме реального времени.-->
+<div class="game-score" id="game-score">Счет игры: <span id="score-count">0</span></div>
+
+<div id="game-wrap">
     <table id="game"></table>
-  </div>
-  <div id="menu">
+</div>
+<div id="menu">
     <div id="playButton" class="menuButton">Старт</div>
     <div id="newGameButton" class="menuButton">Новая игра</div>
-  </div>
+</div>
 
-  <script src="js.js"></script>
+<script src="js.js"></script>
 </body>
 </html>
