@@ -264,25 +264,29 @@ const snake = {
                 // то следующая координата по y бутет maxY
                 if (firstPoint.y === 0) {
                     return {x: firstPoint.x, y: this.maxY - 1};
-                } else return {x: firstPoint.x, y: firstPoint.y - 1};
+                }
+                return {x: firstPoint.x, y: firstPoint.y - 1};
             case 'right':
                 // если голова упирается в правую стенку
                 // то следующая координата по x бутет 0
                 if (firstPoint.x === this.maxX - 1) {
                     return {x: 0, y: firstPoint.y};
-                } else return {x: firstPoint.x + 1, y: firstPoint.y};
+                }
+                return {x: firstPoint.x + 1, y: firstPoint.y};
             case 'down':
                 // если голова упирается в нижнюю стенку
                 // то следующая координата по y бутет 0
                 if (firstPoint.y === this.maxY - 1) {
                     return {x: firstPoint.x, y: 0};
-                } else return {x: firstPoint.x, y: firstPoint.y + 1};
+                }
+                return {x: firstPoint.x, y: firstPoint.y + 1};
             case 'left':
                 // если голова упирается в левую стенку
                 // то следующая координата по x бутет maxX
                 if (firstPoint.x === 0) {
                     return {x: this.maxX - 1, y: firstPoint.y};
-                } else return {x: firstPoint.x - 1, y: firstPoint.y};
+                }
+                return {x: firstPoint.x - 1, y: firstPoint.y};
         }
     },
 
